@@ -1,0 +1,70 @@
+============================================================
+  SUNNY PLACE — SITO WEB DELL'APPARTAMENTO
+  Pescantina (VR) · tra Garda, Verona e le terme
+============================================================
+
+CONTENUTO DEL PACCHETTO
+-----------------------
+- index.html ............. il sito completo (multilingua IT/EN/DE/NL/KO)
+- rendi-offline.py ....... script per scaricare le foto e rendere il sito autonomo
+- LEGGIMI.txt ............ questo file
+
+
+1) GUARDARE IL SITO SUBITO
+--------------------------
+Fai doppio clic su "index.html": si apre nel browser.
+Le foto vengono caricate dai server di Airbnb, quindi serve la connessione
+a internet (e potrebbero non funzionare piu' se un domani l'annuncio cambia).
+
+
+2) RENDERE IL SITO COMPLETAMENTE AUTONOMO (consigliato prima di pubblicare)
+---------------------------------------------------------------------------
+Per includere le foto nel sito (cosi' non dipende piu' da Airbnb):
+
+  a. Serve Python 3 (su Mac/Linux c'e' gia'; su Windows scaricalo da python.org)
+  b. Apri il Terminale / Prompt dei comandi DENTRO questa cartella
+  c. Esegui:
+        Mac/Linux:   python3 rendi-offline.py
+        Windows:     python rendi-offline.py
+
+Lo script scarica le foto nella cartella "images/" e crea "index-offline.html".
+Da quel momento pubblica "index-offline.html" + la cartella "images/".
+(Se vuoi, rinomina "index-offline.html" in "index.html".)
+
+
+3) COME PUBBLICARE IL SITO ONLINE
+---------------------------------
+Il sito e' fatto di soli file statici: si pubblica ovunque. Tre strade, dalla
+piu' semplice:
+
+  OPZIONE A — Netlify Drop (gratis, piu' veloce, nessuna registrazione tecnica)
+     1. Vai su  https://app.netlify.com/drop
+     2. Trascina l'INTERA cartella del sito nella pagina
+     3. In pochi secondi ottieni un indirizzo tipo
+        https://nome-a-caso.netlify.app
+     4. Da li' puoi collegare un dominio tuo (es. www.sunnyplacegarda.it)
+
+  OPZIONE B — Cloudflare Pages / GitHub Pages (gratis)
+     Carichi i file e ottieni un sito statico gratuito con dominio
+     personalizzabile. Adatto se vuoi una soluzione stabile e gratuita.
+
+  OPZIONE C — Hosting tradizionale con dominio (Aruba, Register.it, ecc.)
+     1. Acquista dominio + spazio web
+     2. Via pannello/FTP carica "index.html" (o "index-offline.html"
+        rinominato in "index.html") e la cartella "images/"
+     3. Il sito sara' raggiungibile sul tuo dominio
+
+
+4) MODIFICHE RAPIDE
+-------------------
+Apri "index.html" con un editor di testo (Blocco note, TextEdit, VS Code):
+
+  - Email di contatto: cerca   favalli.filippo@gmail.com
+  - Numero WhatsApp:   cerca   393936768111   (formato internazionale +39...)
+  - Link Airbnb:       cerca   airbnb.com/rooms/10702148
+
+Salva e ricarica la pagina.
+
+------------------------------------------------------------
+Codice identificativo struttura (CIR): IT023058C2W4MRBPDE
+============================================================
